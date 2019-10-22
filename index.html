@@ -57,7 +57,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Disentangling Timbre ans Singing Style</div>
+          <div class="intro-lead-in">Disentangling Timbre and Singing Style</div>
           <div class="intro-heading">with Multi-singer Singing Synthesis System</div>
         </div>
       </div>
@@ -69,7 +69,7 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Listening Test Result</h2>
-            <h3 class="section-subheading text-muted">Qualitative evaluation results of our proposed system.</h3>
+            <h3 class="section-subheading text-muted">Qualitative evaluation results of our proposed system. (9-point scale)</h3>
             <table class="table table-bordered">
               <tr style="font-size:120%">
                 <th></th>
@@ -101,211 +101,175 @@
       </div>
     </section>
 
+    
+
+
     <!-- Samples -->
     <section class="bg-light" id="samples">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Audio Samples</h2>
-            <br>
-            <div class="nav nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="nav-link py-3 px-4 active" id="v-pills-2_5-tab" data-toggle="pill" href="#v-pills-2_5" role="tab" aria-controls="v-pills-2_5" aria-selected="true"">2.5dB</a>
-              <a class="nav-link py-3 px-4" id="v-pills-7_5-tab" data-toggle="pill" href="#v-pills-7_5" role="tab" aria-controls="v-pills-7_5" aria-selected="false">7.5dB</a>
-              <a class="nav-link py-3 px-4" id="v-pills-12_5-tab" data-toggle="pill" href="#v-pills-12_5" role="tab" aria-controls="v-pills-12_5" aria-selected="false">12.5dB</a>
-              <a class="nav-link py-3 px-4" id="v-pills-17_5-tab" data-toggle="pill" href="#v-pills-17_5" role="tab" aria-controls="v-pills-17_5" aria-selected="false">17.5dB</a>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">Audio Samples</h2>
+              <br>
+              <div class="nav nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link py-3 px-4 active" id="v-pills-2_5-tab" data-toggle="pill" href="#v-pills-2_5" role="tab" aria-controls="v-pills-2_5" aria-selected="true"">Multi-singer</a>
+                <a class="nav-link py-3 px-4" id="v-pills-7_5-tab" data-toggle="pill" href="#v-pills-7_5" role="tab" aria-controls="v-pills-7_5" aria-selected="false">Cross-generation</a>
+                <a class="nav-link py-3 px-4" id="v-pills-12_5-tab" data-toggle="pill" href="#v-pills-12_5" role="tab" aria-controls="v-pills-12_5" aria-selected="false">Interpolation</a>
+              </div>
+              <div class="tab-content py-5" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-2_5" role="tabpanel" aria-labelledby="v-pills-2_5-tab">
+                  <table class="table">
+                    <tbody">
+                      <tr>
+                        <!-- <th>SNR</th> -->
+                        <th>Song number</th>
+                        <th>Singer 1</th>
+                        <th>Singer 2</th>
+                        <th>Singer 3</th>
+                        <th>Singer 4</th>
+                      </tr>
+                      <tr>
+                        <!-- <th rowspan="5" style="font-size:120%" class="align-middle">2.5dB</th> -->
+                        <td class="align-middle">232_052</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">232_170</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p232_170.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p232_170.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_170.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">257_054</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p257_054.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p257_054.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p257_054.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">257_070</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p257_070.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p257_070.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p257_070.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">257_143</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p257_143.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p257_143.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p257_143.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-7_5" role="tabpanel" aria-labelledby="v-pills-7_5-tab">
+                  <table class="table">
+                    <tbody">
+                      <tr>
+                        <th>SNR</th>
+                        <th>Sample Name</th>
+                        <th>Mixture</th>
+                        <th>Clean</th>
+                        <th>DeepComplexUNet</th>
+                      </tr>
+                      <tr>
+                        <th rowspan="5" style="font-size:120%" class="align-middle">7.5dB</th>
+                        <td class="align-middle">232_013</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p232_013.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p232_013.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p232_013.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">232_095</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p232_095.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p232_095.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p232_095.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">232_103</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p232_103.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p232_103.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p232_103.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">232_266</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p232_266.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p232_266.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p232_266.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">257_154</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p257_154.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p257_154.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p257_154.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+  
+                <div class="tab-pane fade" id="v-pills-12_5" role="tabpanel" aria-labelledby="v-pills-12_5-tab">
+                  <table class="table">
+                    <tbody">
+                      <tr>
+                        <th>SNR</th>
+                        <th>Sample Name</th>
+                        <th>Mixture</th>
+                        <th>Clean</th>
+                        <th>DeepComplexUNet</th>
+                      </tr>
+                      <tr>
+                        <th rowspan="5" style="font-size:120%" class="align-middle">12.5dB</th>
+                        <td class="align-middle">232_306</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p232_306.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p232_306.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p232_306.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">232_367</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p232_367.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p232_367.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p232_367.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">257_289</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p257_289.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p257_289.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p257_289.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">257_329</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p257_329.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p257_329.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p257_329.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="align-middle">257_432</td>
+                        <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p257_432.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p257_432.wav" type="audio/mpeg"></audio></td>
+                        <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p257_432.wav" type="audio/mpeg"></audio></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+  
+                <!-- <p class="text-muted">The audio samples of other comparable algorithms are available in the links below.<br>
+                We encourage listeners to use headphone for more precise comparison with other algorithms.</p>
+                <p>
+                  <a href="http://veu.talp.cat/segan/" style="color:blue">SEGAN</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="http://www.jordipons.me/apps/speech-denoising-wavenet/" style="color:blue">Wavenet Denoising</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="https://ccrma.stanford.edu/%7Efrancois/SpeechDenoisingWithDeepFeatureLosses/" style="color:blue">Deep Feature Loss</a> </p> -->
+              </div>
+              <div>
             </div>
-            <div class="tab-content py-5" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-2_5" role="tabpanel" aria-labelledby="v-pills-2_5-tab">
-                <table class="table">
-                  <tbody">
-                    <tr>
-                      <th>SNR</th>
-                      <th>Sample Name</th>
-                      <th>Mixture</th>
-                      <th>Clean</th>
-                      <th>DeepComplexUNet</th>
-                    </tr>
-                    <tr>
-                      <th rowspan="5" style="font-size:120%" class="align-middle">2.5dB</th>
-                      <td class="align-middle">232_052</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_052.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">232_170</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p232_170.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p232_170.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p232_170.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_054</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p257_054.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p257_054.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p257_054.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_070</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p257_070.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p257_070.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p257_070.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_143</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/2_5/p257_143.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/2_5/p257_143.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/2_5/p257_143.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-7_5" role="tabpanel" aria-labelledby="v-pills-7_5-tab">
-                <table class="table">
-                  <tbody">
-                    <tr>
-                      <th>SNR</th>
-                      <th>Sample Name</th>
-                      <th>Mixture</th>
-                      <th>Clean</th>
-                      <th>DeepComplexUNet</th>
-                    </tr>
-                    <tr>
-                      <th rowspan="5" style="font-size:120%" class="align-middle">7.5dB</th>
-                      <td class="align-middle">232_013</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p232_013.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p232_013.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p232_013.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">232_095</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p232_095.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p232_095.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p232_095.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">232_103</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p232_103.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p232_103.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p232_103.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">232_266</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p232_266.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p232_266.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p232_266.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_154</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/7_5/p257_154.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/7_5/p257_154.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/7_5/p257_154.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-12_5" role="tabpanel" aria-labelledby="v-pills-12_5-tab">
-                <table class="table">
-                  <tbody">
-                    <tr>
-                      <th>SNR</th>
-                      <th>Sample Name</th>
-                      <th>Mixture</th>
-                      <th>Clean</th>
-                      <th>DeepComplexUNet</th>
-                    </tr>
-                    <tr>
-                      <th rowspan="5" style="font-size:120%" class="align-middle">12.5dB</th>
-                      <td class="align-middle">232_306</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p232_306.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p232_306.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p232_306.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">232_367</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p232_367.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p232_367.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p232_367.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_289</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p257_289.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p257_289.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p257_289.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_329</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p257_329.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p257_329.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p257_329.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_432</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/12_5/p257_432.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/12_5/p257_432.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/12_5/p257_432.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              <div class="tab-pane fade" id="v-pills-17_5" role="tabpanel" aria-labelledby="v-pills-17_5-tab">
-                <table class="table">
-                  <tbody">
-                    <tr>
-                      <th>SNR</th>
-                      <th>Sample Name</th>
-                      <th>Mixture</th>
-                      <th>Clean</th>
-                      <th>DeepComplexUNet</th>
-                    </tr>
-                    <tr>
-                      <th rowspan="5" style="font-size:120%" class="align-middle">17.5dB</th>
-                      <td class="align-middle">257_140</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/17_5/p257_140.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/17_5/p257_140.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/17_5/p257_140.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_252</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/17_5/p257_252.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/17_5/p257_252.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/17_5/p257_252.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_308</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/17_5/p257_308.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/17_5/p257_308.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/17_5/p257_308.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_388</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/17_5/p257_388.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/17_5/p257_388.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/17_5/p257_388.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                    <tr>
-                      <td class="align-middle">257_408</td>
-                      <td><audio controls style="width:180px;"><source src="audio/Noisy/17_5/p257_408.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Clean/17_5/p257_408.wav" type="audio/mpeg"></audio></td>
-                      <td><audio controls style="width:180px;"><source src="audio/Estimate/17_5/p257_408.wav" type="audio/mpeg"></audio></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p class="text-muted">The audio samples of other comparable algorithms are available in the links below.<br>
-              We encourage listeners to use headphone for more precise comparison with other algorithms.</p>
-              <p>
-                <a href="http://veu.talp.cat/segan/" style="color:blue">SEGAN</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="http://www.jordipons.me/apps/speech-denoising-wavenet/" style="color:blue">Wavenet Denoising</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://ccrma.stanford.edu/%7Efrancois/SpeechDenoisingWithDeepFeatureLosses/" style="color:blue">Deep Feature Loss</a> </p>
-            </div>
-            <div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- Reference -->
     <section id="reference">
